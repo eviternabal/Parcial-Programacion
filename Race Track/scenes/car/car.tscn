@@ -2,9 +2,8 @@
 
 [ext_resource path="res://scenes/car/wheel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/body.png" type="Texture" id=2]
-[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://images/maurasio.png" type="Texture" id=3]
 [ext_resource path="res://scenes/car/sprite.gd" type="Script" id=4]
-
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 12.4805
@@ -19,7 +18,7 @@ collision_mask = 2
 mass = 0.1
 
 [node name="sprite" type="Sprite" parent="player"]
-scale = Vector2( 0.453706, 0.453706 )
+scale = Vector2( 0.03, 0.03 )
 texture = ExtResource( 3 )
 script = ExtResource( 4 )
 
