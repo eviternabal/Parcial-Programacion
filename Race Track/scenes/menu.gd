@@ -1,5 +1,6 @@
 extends Node2D
 
+var scene_mainmenu = load("res://scenes/menu.tscn")
 var scene_lvlselect = load("res://scenes/test.tscn")
 var scene_credits = load("res://scenes/credits.tscn")
 
@@ -11,7 +12,8 @@ func _on_lvlselector_pressed():
 func _on_credits_pressed():
 	get_tree().change_scene_to(scene_credits)
 
-
 func _on_quit_pressed():
 	get_tree().quit()
 
+func _on_back_pressed():
+	get_tree().change_scene_to(scene_mainmenu)
