@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/menu.gd" type="Script" id=2]
+[ext_resource path="res://images/Fondo.jpg" type="Texture" id=3]
+[ext_resource path="res://themes/button.tres" type="Theme" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Fondo" type="Sprite" parent="."]
+modulate = Color( 0.396078, 0.396078, 0.396078, 1 )
+position = Vector2( 960, 540 )
+scale = Vector2( 2, 1.5 )
+texture = ExtResource( 3 )
+
+[node name="lvl 1" type="Button" parent="."]
+margin_left = 100.0
+margin_top = 50.0
+margin_right = 600.0
+margin_bottom = 250.0
+theme = ExtResource( 4 )
+text = "Level 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl 2" type="Button" parent="."]
+margin_left = 700.0
+margin_top = 50.0
+margin_right = 1200.0
+margin_bottom = 250.0
+theme = ExtResource( 4 )
+text = "Level 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl 3" type="Button" parent="."]
+margin_left = 1298.32
+margin_top = 48.3182
+margin_right = 1798.32
+margin_bottom = 248.318
+theme = ExtResource( 4 )
+text = "Level 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back" type="Button" parent="."]
+margin_left = 1300.0
+margin_top = 800.0
+margin_right = 1800.0
+margin_bottom = 1000.0
+theme = ExtResource( 4 )
+text = "Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="lvl 1" to="." method="_on_lvl_pressed"]
+[connection signal="pressed" from="lvl 2" to="." method="_on_lvl_pressed"]
+[connection signal="pressed" from="lvl 3" to="." method="_on_lvl_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
