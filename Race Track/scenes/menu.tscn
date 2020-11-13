@@ -27,7 +27,7 @@ script = ExtResource( 1 )
 [node name="Fondo" type="Sprite" parent="."]
 modulate = Color( 0.552941, 0.552941, 0.552941, 1 )
 position = Vector2( 960, 521.312 )
-scale = Vector2( 2, 1.48 )
+scale = Vector2( 2, 1.5 )
 texture = ExtResource( 4 )
 
 [node name="Mauri_Car_Cover" type="Sprite" parent="."]
