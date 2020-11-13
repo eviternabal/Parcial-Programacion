@@ -19,6 +19,10 @@ config/name="Race Track"
 run/main_scene="res://scenes/intro.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Globals="*res://globals/Globals.gd"
+
 [display]
 
 window/size/width=1920
