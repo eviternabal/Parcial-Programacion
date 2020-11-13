@@ -16,7 +16,7 @@ func _on_credits_pressed():
 func _on_quit_pressed():
 	get_tree().quit()
 
-func _on_back_pressed():
+func _go_to_menu():
 	get_tree().change_scene_to(scene_mainmenu)
 
 func _on_lvl_pressed():
@@ -26,3 +26,5 @@ func _on_lvl_pressed():
 		get_tree().change_scene_to(scene_lvl2)
 	if $"lvl 3".pressed:
 		get_tree().change_scene_to(scene_lvl3)
+
+

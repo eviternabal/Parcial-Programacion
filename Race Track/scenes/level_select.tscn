@@ -59,4 +59,4 @@ __meta__ = {
 [connection signal="pressed" from="lvl 1" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 2" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 3" to="." method="_on_lvl_pressed"]
-[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="back" to="." method="_go_to_menu"]

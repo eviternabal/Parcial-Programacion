@@ -1,24 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/menu.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://images/Mauri_Car_Cover.png" type="Texture" id=3]
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=4]
+[ext_resource path="res://themes/button.tres" type="Theme" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 72
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 72
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 72
 font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
@@ -63,7 +52,7 @@ margin_top = 880.0
 margin_right = 590.0
 margin_bottom = 980.0
 rect_pivot_offset = Vector2( 249.589, 52.7009 )
-custom_fonts/font = SubResource( 2 )
+theme = ExtResource( 5 )
 text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -74,7 +63,7 @@ margin_left = 700.0
 margin_top = 880.0
 margin_right = 1200.0
 margin_bottom = 980.0
-custom_fonts/font = SubResource( 3 )
+theme = ExtResource( 5 )
 text = "Credits"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -85,7 +74,7 @@ margin_left = 1300.0
 margin_top = 880.0
 margin_right = 1800.0
 margin_bottom = 980.0
-custom_fonts/font = SubResource( 4 )
+theme = ExtResource( 5 )
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
