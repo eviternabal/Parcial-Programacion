@@ -5,11 +5,11 @@
 [ext_resource path="res://images/Mauri_Car_Cover.png" type="Texture" id=3]
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=4]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 200
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 72
 font_data = ExtResource( 2 )
 
@@ -45,7 +45,7 @@ margin_left = 589.188
 margin_top = 22.9821
 margin_right = 1336.19
 margin_bottom = 495.982
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "Maurio
 Kart"
 align = 1
@@ -63,7 +63,7 @@ margin_top = 880.0
 margin_right = 590.0
 margin_bottom = 980.0
 rect_pivot_offset = Vector2( 249.589, 52.7009 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
