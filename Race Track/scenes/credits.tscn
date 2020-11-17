@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/menu.gd" type="Script" id=2]
 [ext_resource path="res://images/Creditos.png" type="Texture" id=3]
 [ext_resource path="res://themes/button.tres" type="Theme" id=4]
+[ext_resource path="res://images/Maurasio_Gaems.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 72
@@ -31,4 +32,9 @@ text = "Back"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Maurasio_Gaems" type="Sprite" parent="."]
+position = Vector2( 1582.71, 348.103 )
+scale = Vector2( 0.613873, 0.629587 )
+texture = ExtResource( 5 )
 [connection signal="pressed" from="back" to="." method="_go_to_menu"]
