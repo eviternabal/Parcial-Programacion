@@ -15,10 +15,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 960, 540 ) ]
+"values": [ Vector2( 616.43, 356.888 ), Vector2( 582.45, 349.337 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:scale")
@@ -39,10 +39,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.5, 2.45, 2.6, 2.75 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.5, 2.45, 2.6, 2.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 25.0, -25.0, 0.0 ]
+"values": [ 0.0, 0.0, 25.0, -25.0, 0.0 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("../ColorRect:color")
@@ -83,9 +83,8 @@ __meta__ = {
 }
 
 [node name="Maurasio_Gaems" type="Sprite" parent="."]
-position = Vector2( 569.677, 339.182 )
-rotation = 0.05594
-scale = Vector2( 0.75, 0.75 )
+position = Vector2( 616.43, 356.888 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Maurasio_Gaems"]

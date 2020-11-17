@@ -4,8 +4,8 @@
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=3]
 [ext_resource path="res://themes/button.tres" type="Theme" id=4]
 
-
 [node name="Node2D" type="Node2D"]
+scale = Vector2( 0.821484, 0.821484 )
 script = ExtResource( 2 )
 
 [node name="Fondo" type="Sprite" parent="."]
