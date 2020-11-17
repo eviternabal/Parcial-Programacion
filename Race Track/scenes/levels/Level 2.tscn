@@ -1,3 +1,23 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
+[ext_resource path="res://images/seamless.png" type="Texture" id=2]
+[ext_resource path="res://scenes/platforms/bounce.tscn" type="PackedScene" id=3]
 
 [node name="Level 2" type="Node2D"]
+
+[node name="car" parent="." instance=ExtResource( 1 )]
+position = Vector2( 502.388, 51.6606 )
+
+[node name="platform1" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="platform1"]
+polygon = PoolVector2Array( 224.594, 333.925, 269.9, 386.781, 318.981, 439.639, 368.063, 484.944, 390.716, 507.597, 481.327, 571.781, 537.96, 613.311, 609.694, 658.617, 692.755, 677.495, 775.816, 688.821, 862.653, 703.923, 991.02, 726.576, 1058.98, 734.127, 1126.94, 737.903, 1210, 753.005, 1308.16, 764.331, 1406.32, 768.107, 1512.04, 768.107, 1598.87, 764.331, 1700.81, 764.331, 1768.77, 768.107, 1829.18, 764.331, 1863.16, 764.331, 1885.81, 764.331, 1900.91, 764.331, 1900.91, 945.555, 183.063, 945.555, 171.737, -659.031 )
+
+[node name="Polygon2D" type="Polygon2D" parent="platform1"]
+texture = ExtResource( 2 )
+texture_scale = Vector2( 5, 5 )
+polygon = PoolVector2Array( 224.594, 333.925, 269.9, 386.781, 318.981, 439.639, 368.063, 484.944, 390.716, 507.597, 481.327, 571.781, 537.96, 613.311, 609.694, 658.617, 692.755, 677.495, 775.816, 688.821, 862.653, 703.923, 991.02, 726.576, 1058.98, 734.127, 1126.94, 737.903, 1210, 753.005, 1308.16, 764.331, 1406.32, 768.107, 1512.04, 768.107, 1598.87, 764.331, 1700.81, 764.331, 1768.77, 768.107, 1829.18, 764.331, 1863.16, 764.331, 1885.81, 764.331, 1900.91, 764.331, 1900.91, 945.555, 183.063, 945.555, 171.737, -659.031 )
+
+[node name="bounce" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1836.84, 804.134 )

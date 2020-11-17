@@ -73,17 +73,17 @@ tracks/4/keys = {
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -13.3394
-margin_top = -10.6786
-margin_right = 1929.66
-margin_bottom = 1097.32
+margin_left = -4.99097
+margin_top = -8.33032
+margin_right = 1205.01
+margin_bottom = 675.67
 color = Color( 1, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Maurasio_Gaems" type="Sprite" parent="."]
-position = Vector2( 960, 540 )
+position = Vector2( 569.677, 339.182 )
 rotation = 0.05594
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 3 )
