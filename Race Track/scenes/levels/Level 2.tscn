@@ -1,13 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/seamless.png" type="Texture" id=2]
 [ext_resource path="res://scenes/platforms/bounce.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/platforms/floor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=5]
+[ext_resource path="res://images/Creditos.png" type="Texture" id=6]
+[ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=7]
 
 [node name="Level 2" type="Node2D"]
 
 [node name="car" parent="." instance=ExtResource( 1 )]
-position = Vector2( 502.388, 51.6606 )
+position = Vector2( 300.093, 137.277 )
 
 [node name="platform1" type="StaticBody2D" parent="."]
 
@@ -20,4 +24,165 @@ texture_scale = Vector2( 5, 5 )
 polygon = PoolVector2Array( 224.594, 333.925, 269.9, 386.781, 318.981, 439.639, 368.063, 484.944, 390.716, 507.597, 481.327, 571.781, 537.96, 613.311, 609.694, 658.617, 692.755, 677.495, 775.816, 688.821, 862.653, 703.923, 991.02, 726.576, 1058.98, 734.127, 1126.94, 737.903, 1210, 753.005, 1308.16, 764.331, 1406.32, 768.107, 1512.04, 768.107, 1598.87, 764.331, 1700.81, 764.331, 1768.77, 768.107, 1829.18, 764.331, 1863.16, 764.331, 1885.81, 764.331, 1900.91, 764.331, 1900.91, 945.555, 183.063, 945.555, 171.737, -659.031 )
 
 [node name="bounce" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1836.84, 804.134 )
+position = Vector2( 1836.84, 796.547 )
+scale = Vector2( 2, 1 )
+
+[node name="floor" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3131.61, 539.408 )
+scale = Vector2( 5, 1 )
+
+[node name="floor4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4420.15, 539.408 )
+scale = Vector2( 5, 1 )
+
+[node name="floor5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4429.68, 335.807 )
+scale = Vector2( 5, 1 )
+
+[node name="floor2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3131.61, 336.634 )
+scale = Vector2( 5, 1 )
+
+[node name="floor3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2368.6, 611.54 )
+rotation = -0.523598
+scale = Vector2( 1.2, 1 )
+
+[node name="floor6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2372.78, 361.211 )
+rotation = -0.261799
+
+[node name="bounce2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 5915.64, 784.028 )
+scale = Vector2( 5, 1 )
+
+[node name="floor" parent="bounce2" instance=ExtResource( 4 )]
+position = Vector2( 266.436, -491.274 )
+
+[node name="floor2" parent="bounce2" instance=ExtResource( 4 )]
+position = Vector2( 544.753, -491.274 )
+
+[node name="magnet" parent="bounce2" instance=ExtResource( 5 )]
+position = Vector2( 135.62, -517.918 )
+scale = Vector2( 1, 2 )
+
+[node name="magnet" parent="bounce2/magnet" instance=ExtResource( 5 )]
+position = Vector2( 262.698, -0.844421 )
+
+[node name="bounce" parent="bounce2" instance=ExtResource( 3 )]
+position = Vector2( 265.91, -10.6788 )
+
+[node name="bounce3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 8574.36, 772.714 )
+scale = Vector2( 5, 1 )
+
+[node name="magnet" parent="bounce3" instance=ExtResource( 5 )]
+position = Vector2( 135.62, -517.918 )
+scale = Vector2( 1, 2 )
+
+[node name="caida" type="StaticBody2D" parent="."]
+position = Vector2( 9338.88, 969.807 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="caida"]
+position = Vector2( -9267.05, -754.294 )
+polygon = PoolVector2Array( 9720.07, 911.896, 9810.68, 942.1, 9931.5, 1032.71, 9931.5, 1062.92, 10022.1, 1123.32, 10022.1, 1123.32, 10112.7, 1213.94, 10173.1, 1244.14, 10233.5, 1304.55, 10293.9, 1334.75, 10324.1, 1395.16, 10414.8, 1455.57, 10445, 1576.38, 10475.2, 1636.79, 10505.4, 1727.4, 10535.6, 1787.81, 10535.6, 1878.42, 10535.6, 1999.24, 10535.6, 2089.85, 10535.6, 2120.06, 10565.8, 2240.87, 10656.4, 2391.89, 10716.8, 2542.91, 10898, 2663.73, 10958.4, 2693.93, 10988.6, 2724.13, 11079.2, 2754.34, 11200.1, 2784.54, 11230.3, 2784.54, 11290.7, 2814.75, 11139.7, 3116.79, 10354.4, 2663.73, 10233.5, 1848.22, 9508.64, 1153.53 )
+
+[node name="Polygon2D" type="Polygon2D" parent="caida"]
+position = Vector2( -9267.05, -754.294 )
+texture = ExtResource( 2 )
+texture_scale = Vector2( 5, 5 )
+polygon = PoolVector2Array( 9720.07, 911.896, 9810.68, 942.1, 9931.5, 1032.71, 9931.5, 1062.92, 10022.1, 1123.32, 10022.1, 1123.32, 10112.7, 1213.94, 10173.1, 1244.14, 10233.5, 1304.55, 10293.9, 1334.75, 10324.1, 1395.16, 10414.8, 1455.57, 10445, 1576.38, 10475.2, 1636.79, 10505.4, 1727.4, 10535.6, 1787.81, 10535.6, 1878.42, 10535.6, 1999.24, 10535.6, 2089.85, 10535.6, 2120.06, 10565.8, 2240.87, 10656.4, 2391.89, 10716.8, 2542.91, 10898, 2663.73, 10958.4, 2693.93, 10988.6, 2724.13, 11079.2, 2754.34, 11200.1, 2784.54, 11230.3, 2784.54, 11290.7, 2814.75, 11139.7, 3116.79, 10354.4, 2663.73, 10233.5, 1848.22, 9508.64, 1153.53 )
+
+[node name="magnet" parent="." instance=ExtResource( 5 )]
+position = Vector2( 20300.3, 2960.86 )
+
+[node name="caida2" type="StaticBody2D" parent="."]
+position = Vector2( 11152.8, 2693.91 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="caida2"]
+position = Vector2( -10847.5, -2729.83 )
+polygon = PoolVector2Array( 12787.4, 2414.07, 12561.1, 2753.48, 12493.2, 2877.93, 12357.5, 3092.89, 12119.9, 3319.16, 11825.7, 3602.01, 11520.3, 3862.22, 11203.5, 4020.61, 10920.6, 4133.75, 10717, 4201.63, 10513.3, 4201.63, 10536, 4450.53, 11757.8, 4360.02, 12425.4, 4088.5, 12968.4, 3703.83, 13285.2, 3160.77 )
+
+[node name="Polygon2D" type="Polygon2D" parent="caida2"]
+position = Vector2( -10847.5, -2729.83 )
+texture = ExtResource( 2 )
+texture_scale = Vector2( 5, 5 )
+polygon = PoolVector2Array( 12787.4, 2414.07, 12561.1, 2753.48, 12493.2, 2877.93, 12357.5, 3092.89, 12119.9, 3319.16, 11825.7, 3602.01, 11520.3, 3862.22, 11203.5, 4020.61, 10920.6, 4133.75, 10717, 4201.63, 10513.3, 4201.63, 10536, 4450.53, 11757.8, 4360.02, 12425.4, 4088.5, 12968.4, 3703.83, 13285.2, 3160.77 )
+
+[node name="caida3" type="StaticBody2D" parent="."]
+position = Vector2( 7022.12, 3466.16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="caida3"]
+position = Vector2( -7848.25, -4292.29 )
+polygon = PoolVector2Array( 8811.39, 4133.87, 8892.52, 4892.19, 9073.74, 5269.74, 9390.88, 5541.58, 9889.25, 5798.31, 10735, 5979.54, 11399.4, 6009.74, 12758.6, 5798.31, 13951.7, 5405.66, 14631.3, 5013.01, 14978.6, 4816.68, 15008.8, 5254.64, 12366, 6085.25, 9859.04, 6115.46, 8122.31, 4982.81, 8533.15, 4443.46 )
+
+[node name="Polygon2D" type="Polygon2D" parent="caida3"]
+position = Vector2( -7848.25, -4292.29 )
+texture = ExtResource( 2 )
+texture_scale = Vector2( 5, 5 )
+polygon = PoolVector2Array( 8814.39, 4139.87, 8892.52, 4892.19, 9073.74, 5269.74, 9390.88, 5541.58, 9889.25, 5798.31, 10735, 5979.54, 11399.4, 6009.74, 12758.6, 5798.31, 13951.7, 5405.66, 14631.3, 5013.01, 14978.6, 4816.68, 15008.8, 5254.64, 12366, 6085.25, 9859.04, 6115.46, 8122.31, 4982.81, 8552.95, 4460.43 )
+
+[node name="vueltamaligna" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="vueltamaligna"]
+polygon = PoolVector2Array( 9807.85, 1119.84, 9606.26, 1361.74, 9485.31, 1402.06, 9344.2, 1583.49, 9001.5, 1906.03, 8578.16, 2349.52, 8013.72, 3095.39, 7872.61, 3317.14, 7630.7, 3639.68, 7429.12, 3881.58, 7187.21, 4183.96, 6481.66, 4768.57, 5776.1, 5131.42, 4526.26, 5333.01, 3336.89, 5353.17, 2591.02, 5212.06, 1381.49, 5070.95, 494.51, 4829.04, -231.205, 4566.98, -896.443, 4345.23, -1481.05, 4063.01, -1864.06, 3760.63, -2085.81, 3538.88, -2287.4, 3216.34, -2428.51, 2692.22, -2589.78, 2147.93, -2670.41, 1764.92, -2589.78, 1139.99, -2307.55, 676.344, -1864.06, 152.217, -1380.25, -351.752, -896.443, -633.974, -573.903, -754.926, -69.9346, -916.196, 252.605, -1037.15, 534.827, -1057.31, 635.621, -1016.99, 655.78, -855.72, 655.78, -714.609, 615.462, -533.18, 554.986, -392.069, 534.827, -291.275, 675.938, -210.641, 1038.8, -210.641, 1280.7, -452.545, 1300.86, -754.926, 1200.07, -1117.78, 817.05, -1480.64, 353.399, -1641.91, -29.6172, -1621.75, -452.951, -1500.8, -876.284, -1319.37, -1440.73, -1057.31, -2166.44, -472.704, -2690.57, 91.7406, -3013.11, 575.55, -3315.49, 1381.9, -3275.17, 2006.82, -3033.27, 2611.58, -2730.89, 3256.66, -2468.82, 4002.54, -1843.9, 4687.93, -896.443, 5312.85, 413.875, 5695.87, 1220.22, 5836.98, 2167.69, 6058.73, 4022.29, 5897.46, 5937.37, 5413.65, 6864.67, 4990.31, 7550.07, 4264.6, 7711.34, 3921.9, 7892.77, 3498.57, 8295.94, 3014.76, 8860.39, 2450.31, 9263.56, 2026.98, 9606.26, 1643.96, 9828, 1321.42 )
+
+[node name="Polygon2D" type="Polygon2D" parent="vueltamaligna"]
+texture = ExtResource( 2 )
+texture_scale = Vector2( 5, 5 )
+polygon = PoolVector2Array( 9807.85, 1119.84, 9606.26, 1361.74, 9485.31, 1402.06, 9344.2, 1583.49, 9001.5, 1906.03, 8578.16, 2349.52, 8013.72, 3095.39, 7872.61, 3317.14, 7630.7, 3639.68, 7429.12, 3881.58, 7187.21, 4183.96, 6481.66, 4768.57, 5776.1, 5131.42, 4526.26, 5333.01, 3336.89, 5353.17, 2591.02, 5212.06, 1381.49, 5070.95, 494.51, 4829.04, -231.205, 4566.98, -896.443, 4345.23, -1481.05, 4063.01, -1864.06, 3760.63, -2085.81, 3538.88, -2287.4, 3216.34, -2428.51, 2692.22, -2589.78, 2147.93, -2670.41, 1764.92, -2589.78, 1139.99, -2307.55, 676.344, -1864.06, 152.217, -1380.25, -351.752, -896.443, -633.974, -573.903, -754.926, -69.9346, -916.196, 252.605, -1037.15, 534.827, -1057.31, 635.621, -1016.99, 655.78, -855.72, 655.78, -714.609, 615.462, -533.18, 554.986, -392.069, 534.827, -291.275, 675.938, -210.641, 1038.8, -210.641, 1280.7, -452.545, 1300.86, -754.926, 1200.07, -1117.78, 817.05, -1480.64, 353.399, -1641.91, -29.6172, -1621.75, -452.951, -1500.8, -876.284, -1319.37, -1440.73, -1057.31, -2166.44, -472.704, -2690.57, 91.7406, -3013.11, 575.55, -3315.49, 1381.9, -3275.17, 2006.82, -3033.27, 2611.58, -2730.89, 3256.66, -2468.82, 4002.54, -1843.9, 4687.93, -896.443, 5312.85, 413.875, 5695.87, 1220.22, 5836.98, 2167.69, 6058.73, 4022.29, 5897.46, 5937.37, 5413.65, 6864.67, 4990.31, 7550.07, 4264.6, 7711.34, 3921.9, 7892.77, 3498.57, 8295.94, 3014.76, 8860.39, 2450.31, 9263.56, 2026.98, 9606.26, 1643.96, 9828, 1321.42 )
+
+[node name="magnet2" parent="." instance=ExtResource( 5 )]
+position = Vector2( -2454.98, -3800.31 )
+scale = Vector2( 40, 40 )
+
+[node name="floor7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 9243.56, 1005.95 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="floor8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2501.24, 1062.97 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="floor9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2501.24, 1062.97 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="floor10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 7167.99, 2383.36 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="floor11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 6099.58, 2091.06 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="floor12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4890.05, 1738.28 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="floor13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3710.77, 1405.66 )
+rotation = 0.261799
+scale = Vector2( 5, 1 )
+
+[node name="flecha" type="Polygon2D" parent="."]
+position = Vector2( -26.9395, -40.4087 )
+texture = ExtResource( 6 )
+texture_scale = Vector2( 5, 4 )
+polygon = PoolVector2Array( 8346.18, 2206.4, 8112.71, 2498.24, 7969.03, 2417.42, 8094.75, 2664.36, 8301.28, 2655.38, 8175.57, 2570.08, 8422.51, 2264.77 )
+
+[node name="flecha2" type="Polygon2D" parent="."]
+position = Vector2( 3555.96, 426.536 )
+texture = ExtResource( 6 )
+texture_scale = Vector2( 5, 4 )
+polygon = PoolVector2Array( 8346.18, 2206.4, 8112.71, 2498.24, 7969.03, 2417.42, 8094.75, 2664.36, 8301.28, 2655.38, 8175.57, 2570.08, 8422.51, 2264.77 )
+
+[node name="goal" parent="." instance=ExtResource( 7 )]
+position = Vector2( 17670, 3898.94 )
+scale = Vector2( 30, 3 )

@@ -73,9 +73,9 @@ tracks/4/keys = {
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -4.99097
+margin_left = -3.30921
 margin_top = -8.33032
-margin_right = 1205.01
+margin_right = 1206.69
 margin_bottom = 675.67
 color = Color( 1, 0, 0, 1 )
 __meta__ = {
