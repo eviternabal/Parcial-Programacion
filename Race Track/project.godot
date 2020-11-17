@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Race Track"
-run/main_scene="res://scenes/intro.tscn"
+run/main_scene="res://scenes/screens/intro.tscn"
 config/icon="res://icon.png"
 
 [autoload]

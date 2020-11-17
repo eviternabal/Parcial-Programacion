@@ -1,10 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scenes/menu.gd" type="Script" id=1]
+[ext_resource path="res://scenes/screens/menu.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://images/Mauri_Car_Cover.png" type="Texture" id=3]
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=4]
 [ext_resource path="res://themes/button.tres" type="Theme" id=5]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
