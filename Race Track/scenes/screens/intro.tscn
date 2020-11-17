@@ -77,13 +77,13 @@ margin_left = -4.99097
 margin_top = -8.33032
 margin_right = 1205.01
 margin_bottom = 675.67
-color = Color( 0.00784314, 1, 0, 1 )
+color = Color( 1, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Maurasio_Gaems" type="Sprite" parent="."]
-position = Vector2( 582.45, 349.337 )
+position = Vector2( 616.43, 356.888 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
