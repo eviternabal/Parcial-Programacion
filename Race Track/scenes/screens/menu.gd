@@ -1,11 +1,11 @@
 extends Node2D
 
-var scene_mainmenu = load("res://scenes/menu.tscn")
-var scene_lvlselect = load("res://scenes/level_select.tscn")
-var scene_credits = load("res://scenes/credits.tscn")
-var scene_lvl1 = load("res://scenes/test.tscn")
-var scene_lvl2 = load("res://scenes/test.tscn")
-var scene_lvl3 = load("res://scenes/test.tscn")
+var scene_mainmenu = load("res://scenes/screens/menu.tscn")
+var scene_lvlselect = load("res://scenes/screens/level_select.tscn")
+var scene_credits = load("res://scenes/screens/credits.tscn")
+var scene_lvl1 = load("res://scenes/levels/Level 1.tscn")
+var scene_lvl2 = load("res://scenes/levels/Level 2.tscn")
+var scene_lvl3 = load("res://scenes/levels/test.tscn")
 
 func _on_lvlselector_pressed():
 	get_tree().change_scene_to(scene_lvlselect)

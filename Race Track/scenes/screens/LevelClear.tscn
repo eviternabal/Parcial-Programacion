@@ -5,7 +5,6 @@
 [ext_resource path="res://themes/button.tres" type="Theme" id=3]
 [ext_resource path="res://scenes/screens/LevelClear.gd" type="Script" id=4]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 102
 font_data = ExtResource( 2 )
@@ -40,7 +39,7 @@ __meta__ = {
 }
 
 [node name="Fitito_alone" type="Sprite" parent="."]
-position = Vector2( 959.421, 316.156 )
+position = Vector2( 800, 318 )
 texture = ExtResource( 1 )
 
 [node name="Level_Complete" type="Label" parent="."]
@@ -57,10 +56,10 @@ __meta__ = {
 }
 
 [node name="Next_level" type="Button" parent="."]
-margin_left = 1331.38
-margin_top = 787.102
-margin_right = 1791.38
-margin_bottom = 938.102
+margin_left = 1110.18
+margin_top = 730.0
+margin_right = 1570.18
+margin_bottom = 881.0
 theme = ExtResource( 3 )
 custom_fonts/font = SubResource( 2 )
 text = "Next Level"
@@ -70,10 +69,10 @@ __meta__ = {
 }
 
 [node name="Retry" type="Button" parent="."]
-margin_left = 729.296
-margin_top = 787.102
-margin_right = 1189.3
-margin_bottom = 938.102
+margin_left = 600.0
+margin_top = 730.0
+margin_right = 1060.0
+margin_bottom = 881.0
 theme = ExtResource( 3 )
 custom_fonts/font = SubResource( 2 )
 text = "Retry"
@@ -83,10 +82,10 @@ __meta__ = {
 }
 
 [node name="Level_select" type="Button" parent="."]
-margin_left = 133.941
-margin_top = 787.102
-margin_right = 593.941
-margin_bottom = 938.102
+margin_left = 80.0
+margin_top = 730.0
+margin_right = 540.0
+margin_bottom = 881.0
 theme = ExtResource( 3 )
 custom_fonts/font = SubResource( 2 )
 text = "Level Select"
