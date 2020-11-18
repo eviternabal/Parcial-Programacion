@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/screens/menu.gd" type="Script" id=2]
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=3]
 [ext_resource path="res://themes/button.tres" type="Theme" id=4]
+[ext_resource path="res://images/lvl1.png" type="Texture" id=5]
+[ext_resource path="res://images/lvl3.png" type="Texture" id=6]
+[ext_resource path="res://images/lvl2.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -117,6 +120,24 @@ theme = ExtResource( 4 )
 custom_fonts/font = SubResource( 2 )
 disabled = true
 text = "SAOj Mode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl2" type="Sprite" parent="."]
+position = Vector2( 955.247, 502.92 )
+scale = Vector2( 0.526476, 0.526476 )
+texture = ExtResource( 7 )
+
+[node name="lvl1" type="Sprite" parent="."]
+position = Vector2( 343.363, 505.526 )
+scale = Vector2( 0.672556, 0.526479 )
+texture = ExtResource( 5 )
+
+[node name="lvl3" type="Sprite" parent="."]
+position = Vector2( 1564.67, 506.363 )
+scale = Vector2( 0.65915, 0.65915 )
+texture = ExtResource( 6 )
 [connection signal="pressed" from="lvl 1" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 2" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 3" to="." method="_on_lvl_pressed"]
