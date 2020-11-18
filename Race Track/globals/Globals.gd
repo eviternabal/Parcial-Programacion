@@ -33,3 +33,6 @@ var level_1_last_score = 0
 var level_2_last_score = 0
 
 var level_3_last_score = 0
+
+var SAOj_toggleable = false
+var SAOj_mode = false

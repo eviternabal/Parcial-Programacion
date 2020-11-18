@@ -14,6 +14,10 @@ var level_2_high_score = Globals.level_2_high_score
 var level_3_high_score = Globals.level_3_high_score
 
 func _ready():
+	if Globals.SAOj_toggleable == true:
+		$SaojMode.disabled = false
+		$SaojMode.visible = true
+		
 	if get_tree().current_scene.name == "level_select":
 		lvl_1_score.text = ("Max score: " + str(level_1_high_score))
 		lvl_2_score.text = ("Max score: " + str(level_2_high_score))
@@ -41,4 +45,8 @@ func _on_lvl_pressed():
 	if $"lvl 3".pressed:
 		Globals.current_level = 2
 		get_tree().change_scene_to(scene_lvl3)
+
+func _on_SaojMode_toggled(button_pressed):
+	Globals.SAOj_mode = true
+	print("saoj")
 

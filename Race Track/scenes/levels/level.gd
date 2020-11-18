@@ -3,8 +3,18 @@ extends Node
 var level_time = 0
 var score = 0
 var collectibles = 0
+var car_model = car
+var car = ""
+
+func check_saoj():
+	if Globals.SAOj_mode == true:
+		car = load("res://scenes/car/fitito.tscn")
+	else:
+		car = load("res://scenes/car/car.tscn")
 
 func _ready():
+	check_saoj()
+	spawn()
 	level_time = 0
 	## Conectar señales de los goals
 	var goals = get_tree().get_nodes_in_group("goals")
@@ -16,6 +26,10 @@ func _ready():
 	var pickups = get_tree().get_nodes_in_group("pickups")
 	for pickup in pickups:
 		pickup.connect ("pickup_pickuped", self, "on_pickup_pickuped")
+
+func spawn():
+	$spawner.add_child(car.instance())
+
 
 func _on_goal_reached():
 	score = collectibles*100 - level_time*50
