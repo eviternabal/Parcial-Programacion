@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=2]
-[ext_resource path="res://scenes/objects/pickup.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
 
@@ -89,33 +88,3 @@ scale = Vector2( 0.5, 15 )
 position = Vector2( 2803.17, 5093.37 )
 rotation = 3.14159
 scale = Vector2( 0.5, 15 )
-
-[node name="pickup2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 4797.28, 1024.35 )
-
-[node name="pickup3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 4889.78, 1022.66 )
-
-[node name="pickup4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 5002.46, 1022.66 )
-
-[node name="pickup5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 5113.46, 1024.35 )
-
-[node name="pickup6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 5221.09, 1031.07 )
-
-[node name="pickup7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3417.43, 2361.59 )
-
-[node name="pickup8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3220.13, 2275.97 )
-
-[node name="pickup9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3031.2, 2268.49 )
-
-[node name="pickup10" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2823.41, 2276.22 )
-
-[node name="pickup11" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2586.86, 2337.19 )
