@@ -9,7 +9,7 @@
 size = 33
 font_data = ExtResource( 1 )
 
-[node name="Node2D" type="Node2D"]
+[node name="level_select" type="Node2D"]
 scale = Vector2( 0.821484, 0.821484 )
 script = ExtResource( 2 )
 

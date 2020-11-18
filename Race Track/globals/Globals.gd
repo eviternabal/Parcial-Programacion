@@ -14,5 +14,8 @@ var level_2_high_score = 0
 
 var level_3_high_score = 0
 
-func _ready():
-	pass 
+var level_1_last_score = 0
+
+var level_2_last_score = 0
+
+var level_3_last_score = 0

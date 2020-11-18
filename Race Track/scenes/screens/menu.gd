@@ -14,9 +14,10 @@ var level_2_high_score = Globals.level_2_high_score
 var level_3_high_score = Globals.level_3_high_score
 
 func _ready():
-	lvl_1_score.text = ("Max score: " + str(level_1_high_score))
-	lvl_2_score.text = ("Max score: " + str(level_2_high_score))
-	lvl_3_score.text = ("Max score: " + str(level_3_high_score))
+	if get_tree().current_scene.name == "level_select":
+		lvl_1_score.text = ("Max score: " + str(level_1_high_score))
+		lvl_2_score.text = ("Max score: " + str(level_2_high_score))
+		lvl_3_score.text = ("Max score: " + str(level_3_high_score))
 
 func _on_lvlselector_pressed():
 	get_tree().change_scene_to(scene_lvlselect)
