@@ -1,10 +1,22 @@
+<<<<<<< HEAD
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=2]
 [ext_resource path="res://scenes/objects/pickup.tscn" type="PackedScene" id=3]
+=======
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/levels/level.gd" type="Script" id=2]
+[ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=3]
+>>>>>>> 85de2cbd0d085f6cf911158ebbd5eb1484704e8f
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 3 )
 
 [node name="Level 3" type="Node2D"]
 script = ExtResource( 2 )
@@ -90,6 +102,7 @@ position = Vector2( 2803.17, 5093.37 )
 rotation = 3.14159
 scale = Vector2( 0.5, 15 )
 
+<<<<<<< HEAD
 [node name="pickup2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 4797.28, 1024.35 )
 
@@ -119,3 +132,23 @@ position = Vector2( 2823.41, 2276.22 )
 
 [node name="pickup11" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2586.86, 2337.19 )
+=======
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="time_text" type="Label" parent="UI"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -118.0
+custom_fonts/font = SubResource( 1 )
+text = "Time: 0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="level_timer" type="Timer" parent="." groups=[
+"timers",
+]]
+autostart = true
+>>>>>>> 85de2cbd0d085f6cf911158ebbd5eb1484704e8f

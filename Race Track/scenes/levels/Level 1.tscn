@@ -67,13 +67,11 @@ scale = Vector2( 5, 1 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="UI"]
+[node name="time_text" type="Label" parent="UI"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -48.0833
 margin_top = -118.0
-margin_right = -48.0833
 custom_fonts/font = SubResource( 1 )
 text = "Time: 0"
 align = 2
