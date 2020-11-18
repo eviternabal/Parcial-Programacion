@@ -1,0 +1,130 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/car/wheel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://images/body.png" type="Texture" id=2]
+[ext_resource path="res://images/maurasio.png" type="Texture" id=3]
+[ext_resource path="res://scenes/car/sprite.gd" type="Script" id=4]
+[ext_resource path="res://images/fititotransp.png" type="Texture" id=5]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 12.4805
+
+[node name="car" type="Node2D"]
+
+[node name="body" type="RigidBody2D" parent="."]
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 2
+collision_mask = 2
+mass = 0.1
+physics_material_override = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="body"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+process_mode = 0
+smoothing_enabled = true
+
+[node name="poly_bottom" type="Polygon2D" parent="body"]
+position = Vector2( 0, 31.4663 )
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
+uv = PoolVector2Array( -3.8147e-06, -3.8147e-06, 0, 89, 890, 89, 890, 0 )
+
+[node name="poly_front" type="Polygon2D" parent="body"]
+position = Vector2( 25.3906, -11.7423 )
+rotation = -2.09392
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
+uv = PoolVector2Array( -3.8147e-06, -3.8147e-06, 0, 89, 890, 89, 890, 0 )
+
+[node name="poly_back" type="Polygon2D" parent="body"]
+position = Vector2( -24.7224, -11.5196 )
+rotation = 2.0944
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
+uv = PoolVector2Array( -3.8147e-06, -3.8147e-06, 0, 89, 890, 89, 890, 0 )
+
+[node name="col_bottom" type="CollisionPolygon2D" parent="body"]
+position = Vector2( 0, 31.4663 )
+polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
+
+[node name="col_front" type="CollisionPolygon2D" parent="body"]
+position = Vector2( 25.3906, -11.7423 )
+rotation = -2.09392
+polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
+
+[node name="col_back" type="CollisionPolygon2D" parent="body"]
+position = Vector2( -24.7224, -11.5196 )
+rotation = 2.0944
+polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
+
+[node name="player" type="RigidBody2D" parent="."]
+position = Vector2( 16.7217, -14.5361 )
+collision_layer = 2
+collision_mask = 2
+mass = 0.1
+
+[node name="sprite" type="Sprite" parent="player"]
+scale = Vector2( 0.03, 0.03 )
+texture = ExtResource( 3 )
+flip_h = true
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource( 2 )
+
+[node name="spring_bottom" type="DampedSpringJoint2D" parent="player"]
+position = Vector2( 0, 34.9628 )
+rotation = 3.14159
+node_a = NodePath("..")
+node_b = NodePath("../../body")
+length = 5.0
+stiffness = 64.0
+
+[node name="spring_front" type="DampedSpringJoint2D" parent="player"]
+position = Vector2( 28.1588, -13.5013 )
+rotation = 1.0472
+node_a = NodePath("..")
+node_b = NodePath("../../body")
+length = 5.0
+stiffness = 64.0
+
+[node name="spring_back" type="DampedSpringJoint2D" parent="player"]
+position = Vector2( -27.5395, -13.0754 )
+rotation = -1.0472
+node_a = NodePath("..")
+node_b = NodePath("../../body")
+length = 5.0
+stiffness = 64.0
+
+[node name="fititotransp" type="Sprite" parent="."]
+position = Vector2( -0.211533, -0.283813 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+
+[node name="backWheel" parent="." instance=ExtResource( 1 )]
+position = Vector2( -80.7216, 45.3908 )
+scale = Vector2( 1.48, 1.48 )
+
+[node name="backPin" type="PinJoint2D" parent="backWheel"]
+node_a = NodePath("..")
+node_b = NodePath("../../body")
+
+[node name="frontWheel" parent="backWheel" instance=ExtResource( 1 )]
+position = Vector2( 119.325, -0.560793 )
+scale = Vector2( 1.05406, 1.05406 )
+
+[node name="frontPin" type="PinJoint2D" parent="backWheel/frontWheel"]
+node_a = NodePath("..")
+node_b = NodePath("../../body")
+
+[node name="topWheel" parent="." instance=ExtResource( 1 )]
+visible = false
+position = Vector2( 195.088, -34.9375 )
+scale = Vector2( 3.64, 3.64 )
+
+[node name="topPin" type="PinJoint2D" parent="topWheel"]
+node_a = NodePath("..")
+node_b = NodePath("../../body")
