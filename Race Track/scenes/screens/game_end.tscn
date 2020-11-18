@@ -2,8 +2,9 @@
 
 [ext_resource path="res://images/FinishScreen.png" type="Texture" id=1]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=2]
-[ext_resource path="res://game_end.gd" type="Script" id=3]
+[ext_resource path="res://scenes/screens/game_end.gd" type="Script" id=3]
 [ext_resource path="res://themes/button.tres" type="Theme" id=4]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 72

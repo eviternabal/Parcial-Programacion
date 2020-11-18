@@ -203,8 +203,9 @@ polygon = PoolVector2Array( 8346.18, 2206.4, 8112.71, 2498.24, 7969.03, 2417.42,
 [node name="goal" parent="." groups=[
 "goals",
 ] instance=ExtResource( 7 )]
-position = Vector2( 17670, 3898.94 )
-scale = Vector2( 30, 3 )
+position = Vector2( 16091.8, 4102.82 )
+rotation = -0.57838
+scale = Vector2( 7.25095, 3 )
 
 [node name="level_timer" type="Timer" parent="." groups=[
 "timers",

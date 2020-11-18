@@ -27,12 +27,14 @@ process_mode = 0
 smoothing_enabled = true
 
 [node name="poly_bottom" type="Polygon2D" parent="body"]
+visible = false
 position = Vector2( -0.314972, 46.8574 )
 texture = ExtResource( 2 )
 polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
 uv = PoolVector2Array( -3.8147e-06, -3.8147e-06, 0, 89, 890, 89, 890, 0 )
 
 [node name="poly_front" type="Polygon2D" parent="body"]
+visible = false
 position = Vector2( 60.7504, -10.8234 )
 rotation = -2.09392
 texture = ExtResource( 2 )
@@ -40,6 +42,7 @@ polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
 uv = PoolVector2Array( -3.8147e-06, -3.8147e-06, 0, 89, 890, 89, 890, 0 )
 
 [node name="poly_back" type="Polygon2D" parent="body"]
+visible = false
 position = Vector2( -97.6827, -12.8067 )
 rotation = 2.0944
 texture = ExtResource( 2 )

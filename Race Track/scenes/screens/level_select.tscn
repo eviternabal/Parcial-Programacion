@@ -112,6 +112,7 @@ __meta__ = {
 }
 
 [node name="SaojMode" type="CheckButton" parent="."]
+visible = false
 margin_left = 20.4726
 margin_top = 964.26
 margin_right = 508.473
