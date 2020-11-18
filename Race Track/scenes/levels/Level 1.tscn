@@ -1,6 +1,5 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/seamless.png" type="Texture" id=2]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=4]
@@ -59,9 +58,6 @@ position = Vector2( -39.0928, 77.0979 )
 texture = ExtResource( 2 )
 texture_scale = Vector2( 5, 5 )
 polygon = PoolVector2Array( -1890.28, -1524.7, -1251.52, -1262.02, -980.297, -1024.7, -827.734, -550.057, -793.225, 345.227, -900.98, 1252.18, -1278.13, 1907.69, -1888.75, 2608.11, 992.276, -339.132, 3738.6, -691.579, 4605.42, -369.039, 4608.3, 840.379, 4551.73, 1258.99, 4472.53, 1621.03, 4382.02, 2005.69, 4212.32, 2333.79, 3925.09, 2902.35, 3725.83, 3272.83, 3567.44, 3510.42, 3375.11, 3736.69, 3194.09, 3951.65, 2979.13, 4155.3, 2651.03, 4336.32, 2277.68, 4483.39, 1733.54, 4675.17, 1089.74, 4822.81, 467.482, 4879.37, -267.908, 4924.63, -969.357, 4913.32, -1478.47, 4777.55, -1897.08, 4630.47, -2327, 4449.45, -2538.21, 4183.58, -2945.04, 3488.58, -3233.22, 2946.13, -3538.35, 5929.58, 4666.14, 5929.58, 7584, -2727.61, -1989.84, -2438.1 )
-
-[node name="car" parent="Vuelta" instance=ExtResource( 1 )]
-position = Vector2( -12625.9, -1571.48 )
 
 [node name="goal" parent="." groups=[
 "goals",
@@ -251,3 +247,5 @@ position = Vector2( 9137.64, 445.458 )
 "pickups",
 ] instance=ExtResource( 7 )]
 position = Vector2( 9363.92, 261.61 )
+
+[node name="spawner" type="Position2D" parent="."]

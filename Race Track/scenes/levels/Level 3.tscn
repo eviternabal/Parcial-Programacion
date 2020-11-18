@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=2]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=4]
@@ -17,9 +16,6 @@ font_data = ExtResource( 3 )
 
 [node name="Level 3" type="Node2D"]
 script = ExtResource( 2 )
-
-[node name="car" parent="." instance=ExtResource( 1 )]
-position = Vector2( 174.578, 268.9 )
 
 [node name="goal" parent="." groups=[
 "goals",
@@ -233,3 +229,6 @@ position = Vector2( 2540.21, 2332.53 )
 "pickups",
 ] instance=ExtResource( 5 )]
 position = Vector2( 2375.59, 2372.85 )
+
+[node name="spawner" type="Position2D" parent="."]
+position = Vector2( 135.416, 199.561 )
