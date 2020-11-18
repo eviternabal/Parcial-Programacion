@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://images/seamless.png" type="Texture" id=2]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=3]
@@ -15,7 +15,12 @@ font_data = ExtResource( 6 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 100
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 6 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 202.742, 9.16211 )
 
 [node name="Level 1" type="Node2D"]
 position = Vector2( 8000.5, -431.773 )
@@ -249,5 +254,11 @@ position = Vector2( 9137.64, 445.458 )
 position = Vector2( 9363.92, 261.61 )
 
 [node name="spawner" type="Position2D" parent="."]
-position = Vector2( 0.162109, -2.04492 )
-scale = Vector2( -1.49196, 0.58356 )
+
+[node name="deathwall" type="Area2D" parent="."]
+position = Vector2( 8324.28, 11675.7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="deathwall"]
+scale = Vector2( 79.9581, 0.957462 )
+shape = SubResource( 3 )
+[connection signal="body_entered" from="deathwall" to="." method="_on_deathwall_body_entered"]

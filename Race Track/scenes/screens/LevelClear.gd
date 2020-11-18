@@ -3,12 +3,14 @@ extends Control
 
 var scene_lvlselect = load("res://scenes/screens/level_select.tscn")
 
+onready var Collectibles = $Datos/Collectibles
 onready var Tiempo = get_node("Datos/Tiempo")
 onready var Puntaje = get_node("Datos/Puntaje")
 
 func _ready():
 	Tiempo.text = ("Tiempo: " + str(Globals.level_time))
 	Puntaje.text = ("Puntaje: " + str(Globals.level_score))
+	Collectibles.text = (str(Globals.last_collectables))
 
 func _on_lvlselector_pressed():
 	get_tree().change_scene_to(scene_lvlselect)

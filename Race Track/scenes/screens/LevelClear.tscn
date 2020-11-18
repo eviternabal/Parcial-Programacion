@@ -125,6 +125,17 @@ text = "Puntaje: 0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Collectibles" type="Label" parent="Datos"]
+margin_left = 12.6992
+margin_top = 473.045
+margin_right = 359.699
+margin_bottom = 549.045
+custom_fonts/font = SubResource( 4 )
+text = "Collec"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Next_level" to="." method="_on_Next_level_pressed"]
 [connection signal="pressed" from="Retry" to="." method="_on_Retry_pressed"]
 [connection signal="pressed" from="Level_select" to="." method="_on_lvlselector_pressed"]
