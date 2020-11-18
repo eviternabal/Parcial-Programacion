@@ -249,3 +249,5 @@ position = Vector2( 9137.64, 445.458 )
 position = Vector2( 9363.92, 261.61 )
 
 [node name="spawner" type="Position2D" parent="."]
+position = Vector2( 0.162109, -2.04492 )
+scale = Vector2( -1.49196, 0.58356 )

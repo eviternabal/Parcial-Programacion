@@ -230,5 +230,20 @@ position = Vector2( 2540.21, 2332.53 )
 ] instance=ExtResource( 5 )]
 position = Vector2( 2375.59, 2372.85 )
 
+[node name="pickup24" parent="." groups=[
+"pickups",
+] instance=ExtResource( 5 )]
+position = Vector2( -413.239, 879.44 )
+
+[node name="pickup25" parent="." groups=[
+"pickups",
+] instance=ExtResource( 5 )]
+position = Vector2( -701.739, 1411.18 )
+
+[node name="pickup26" parent="." groups=[
+"pickups",
+] instance=ExtResource( 5 )]
+position = Vector2( -786.592, 2027.78 )
+
 [node name="spawner" type="Position2D" parent="."]
-position = Vector2( 135.416, 199.561 )
+position = Vector2( 147.226, 245.125 )

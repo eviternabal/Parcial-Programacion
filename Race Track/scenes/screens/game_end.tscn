@@ -31,13 +31,11 @@ __meta__ = {
 }
 
 [node name="continue" type="Button" parent="."]
-visible = false
 margin_left = 923.812
 margin_top = 828.573
 margin_right = 1293.81
 margin_bottom = 933.573
 theme = ExtResource( 4 )
-disabled = true
 text = "Continue"
 __meta__ = {
 "_edit_use_anchors_": false

@@ -515,4 +515,4 @@ position = Vector2( 488.716, 4666.52 )
 position = Vector2( 204.576, 4593.43 )
 
 [node name="spawner" type="Position2D" parent="."]
-position = Vector2( 287.788, 0 )
+position = Vector2( 335.319, -117.096 )
