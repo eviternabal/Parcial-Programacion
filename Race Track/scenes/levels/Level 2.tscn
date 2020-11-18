@@ -18,7 +18,7 @@ font_data = ExtResource( 9 )
 script = ExtResource( 8 )
 
 [node name="car" parent="." instance=ExtResource( 1 )]
-position = Vector2( 8293.03, 3675.14 )
+position = Vector2( 310.079, 65.3015 )
 
 [node name="platform1" type="StaticBody2D" parent="."]
 
