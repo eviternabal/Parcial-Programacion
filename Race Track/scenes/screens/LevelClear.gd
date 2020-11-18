@@ -21,7 +21,7 @@ func _on_Next_level_pressed():
 	Globals.current_level += 1
 	print(Globals.current_level)
 	if Globals.current_level >= Globals.levels.size():
-		next_scene = "res://scenes/screens/credits.tscn"
+		next_scene = "res://scenes/screens/game_end.tscn"
 	else:
 		next_scene = Globals.levels[Globals.current_level]
 	get_tree().change_scene(next_scene)

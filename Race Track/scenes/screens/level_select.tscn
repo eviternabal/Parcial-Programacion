@@ -109,17 +109,14 @@ __meta__ = {
 }
 
 [node name="SaojMode" type="CheckButton" parent="."]
-visible = false
 margin_left = 20.4726
 margin_top = 964.26
 margin_right = 508.473
 margin_bottom = 1057.26
+theme = ExtResource( 4 )
 custom_fonts/font = SubResource( 2 )
 disabled = true
 text = "SAOj Mode"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="pressed" from="lvl 1" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 2" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 3" to="." method="_on_lvl_pressed"]
