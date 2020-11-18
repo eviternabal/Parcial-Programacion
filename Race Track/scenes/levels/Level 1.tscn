@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/seamless.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=4]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=5]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://scenes/objects/pickup.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -84,3 +85,153 @@ __meta__ = {
 "timers",
 ]]
 autostart = true
+
+[node name="pickup" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 3450.48, 1093.38 )
+
+[node name="pickup2" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 3597.1, 929.016 )
+
+[node name="pickup3" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 3730.44, 821.073 )
+
+[node name="pickup4" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 3876.48, 690.906 )
+
+[node name="pickup5" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 4035.22, 582.963 )
+
+[node name="pickup6" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 4251.11, 490.893 )
+
+[node name="pickup7" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 4517.79, 449.621 )
+
+[node name="pickup8" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 4746.38, 455.97 )
+
+[node name="pickup9" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 4984.49, 490.893 )
+
+[node name="pickup10" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 5187.67, 586.137 )
+
+[node name="pickup11" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 5317.84, 751.227 )
+
+[node name="pickup12" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 7958.19, 1011.14 )
+
+[node name="pickup20" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 11178.9, 6350.47 )
+
+[node name="pickup29" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 10812.7, 6184.35 )
+
+[node name="pickup21" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 11537.6, 6433.02 )
+
+[node name="pickup22" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 11883.7, 6464.77 )
+
+[node name="pickup23" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 12350.4, 6467.94 )
+
+[node name="pickup24" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 12826.6, 6439.37 )
+
+[node name="pickup25" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 13325, 6379.05 )
+
+[node name="pickup26" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 13893.3, 6290.15 )
+
+[node name="pickup27" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 14445.7, 6144.11 )
+
+[node name="pickup28" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 14979.1, 5950.45 )
+
+[node name="pickup30" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 15347.8, 5751.27 )
+
+[node name="pickup13" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 8099.61, 892.35 )
+
+[node name="pickup14" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 8266.48, 782.041 )
+
+[node name="pickup15" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 8436.19, 688.703 )
+
+[node name="pickup16" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 8642.67, 646.277 )
+
+[node name="pickup17" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 8874.6, 595.365 )
+
+[node name="pickup18" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 9137.64, 445.458 )
+
+[node name="pickup19" parent="." groups=[
+"pickups",
+] instance=ExtResource( 7 )]
+position = Vector2( 9363.92, 261.61 )
