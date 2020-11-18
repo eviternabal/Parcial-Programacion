@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/screens/menu.gd" type="Script" id=2]
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=3]
 [ext_resource path="res://themes/button.tres" type="Theme" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+font_data = ExtResource( 1 )
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 0.821484, 0.821484 )
@@ -54,6 +59,47 @@ margin_right = 1800.0
 margin_bottom = 1000.0
 theme = ExtResource( 4 )
 text = "Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="max score labels" type="CanvasLayer" parent="."]
+
+[node name="lvl 1" type="Label" parent="max score labels"]
+margin_left = 130.315
+margin_top = 233.665
+margin_right = 438.315
+margin_bottom = 330.665
+custom_fonts/font = SubResource( 1 )
+text = "Max score: 0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl 2" type="Label" parent="max score labels"]
+margin_left = 622.409
+margin_top = 233.665
+margin_right = 930.409
+margin_bottom = 330.665
+custom_fonts/font = SubResource( 1 )
+text = "Max score: 0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lvl 3" type="Label" parent="max score labels"]
+margin_left = 1124.03
+margin_top = 235.252
+margin_right = 1432.03
+margin_bottom = 332.252
+custom_fonts/font = SubResource( 1 )
+text = "Max score: 0"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

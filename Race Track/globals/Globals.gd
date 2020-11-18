@@ -1,17 +1,18 @@
 extends Node
 
-
 var levels = [
-	"res://scenes/Level 1.tscn"
+	"res://scenes/Level 1.tscn",
+	"res://scenes/Level 2.tscn",
+	"res://scenes/Level 3.tscn"
 ]
 
 var current_level = 0
 
-# Called when the node enters the scene tree for the first time.
+var level_1_score = 0
+
+var level_2_score = 0
+
+var level_3_score = 0
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	pass 
