@@ -13,8 +13,8 @@ func _update_accel(direction, delta):
 	
 func _get_direction():
 	var direction = 0
-	if Input.is_key_pressed(KEY_Z):
+	if Input.is_action_pressed("move_left"):
 		direction -=1
-	if Input.is_key_pressed(KEY_X):
+	if Input.is_action_pressed("move_right"):
 		direction +=1
 	return direction
