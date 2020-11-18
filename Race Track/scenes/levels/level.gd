@@ -51,3 +51,4 @@ func _on_timer_timeout():
 
 func on_pickup_pickuped():
 	collectibles += 1
+	print ("sadsdas")

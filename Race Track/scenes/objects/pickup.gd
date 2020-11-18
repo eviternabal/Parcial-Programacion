@@ -8,4 +8,6 @@ func _ready():
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("wheels"):
 		emit_signal("pickup_pickuped")
+		get_node("AnimationPlayer").play("DESTRUIR")
+		print ("asdasd")
 	pass 
