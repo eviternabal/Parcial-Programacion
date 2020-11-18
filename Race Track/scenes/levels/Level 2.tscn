@@ -57,11 +57,11 @@ position = Vector2( 4420.15, 539.408 )
 scale = Vector2( 5, 1 )
 
 [node name="floor5" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4429.68, 335.807 )
+position = Vector2( 4422.95, 281.99 )
 scale = Vector2( 5, 1 )
 
 [node name="floor2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3131.61, 336.634 )
+position = Vector2( 3124.88, 282.817 )
 scale = Vector2( 5, 1 )
 
 [node name="floor3" parent="." instance=ExtResource( 4 )]
@@ -70,7 +70,7 @@ rotation = -0.523598
 scale = Vector2( 1.2, 1 )
 
 [node name="floor6" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2372.78, 361.211 )
+position = Vector2( 2366.05, 307.394 )
 rotation = -0.261799
 
 [node name="bounce2" parent="." instance=ExtResource( 3 )]

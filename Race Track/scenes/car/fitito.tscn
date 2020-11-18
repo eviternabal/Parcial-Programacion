@@ -60,9 +60,6 @@ position = Vector2( -97.6827, -12.8067 )
 rotation = 2.0944
 polygon = PoolVector2Array( -50, -5, -50, 5, 50, 5, 50, -5 )
 
-[node name="col_fitito" type="CollisionPolygon2D" parent="body"]
-polygon = PoolVector2Array( -128.327, 41.1969, -102.856, 45.4535, -80.381, 19.9142, -48.542, 48.8587, 64.2055, 50.5613, 97.1682, 17.7859, 123.763, 46.3048, 127.883, 2.4623, 120.392, -6.90212, 65.3292, -17.1178, 43.6038, -51.1702, 14.0123, -58.832, -51.5386, -56.2781, -69.8928, -51.5959, -102.106, -20.5231, -121.584, 5.01622, -128.327, 27.576 )
-
 [node name="topWheel" parent="." instance=ExtResource( 1 )]
 position = Vector2( -14.9831, -52.0662 )
 scale = Vector2( 3.6, 3.6 )
