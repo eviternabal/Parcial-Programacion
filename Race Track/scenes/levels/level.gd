@@ -19,16 +19,19 @@ func _ready():
 
 func _on_goal_reached():
 	score = collectibles*100 - level_time
-	Globals.level_time = level_time
-	if Globals.current_level == 0:
-		Globals.level_1_last_score = score
-		Globals.level_score = score
-	if Globals.current_level == 1:
-		Globals.level_2_last_score = score
-		Globals.level_score = score
-	if Globals.current_level == 2:
-		Globals.level_3_last_score = score
-		Globals.level_score = score
+	if score > 0:
+		Globals.level_time = level_time
+		if Globals.current_level == 0:
+			Globals.level_1_last_score = score
+			Globals.level_score = score
+		if Globals.current_level == 1:
+			Globals.level_2_last_score = score
+			Globals.level_score = score
+		if Globals.current_level == 2:
+			Globals.level_3_last_score = score
+			Globals.level_score = score
+	else:
+		score = 0
 	Globals.new_high_score()
 	score -= collectibles*100 - level_time
 	get_tree().change_scene("res://scenes/screens/LevelClear.tscn")
