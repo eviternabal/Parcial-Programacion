@@ -1,11 +1,12 @@
 extends Node
 
 var levels = [
-	"res://scenes/levels/Level 1.tscn",
-	"res://scenes/levels/Level 2.tscn",
-	"res://scenes/levels/Level 3.tscn"
+	"res://scenes/Level 1.tscn",
+	"res://scenes/Level 2.tscn",
+	"res://scenes/Level 3.tscn"
 ]
 
+<<<<<<< HEAD
 var level_score = 0
 
 var level_time = 0
@@ -20,6 +21,8 @@ func new_high_score():
 	if level_3_last_score > level_3_high_score:
 		level_3_high_score = level_3_last_score
 
+=======
+>>>>>>> parent of bf3053b... SAOj
 var current_level = 0
 
 var level_1_high_score = 0

@@ -19,11 +19,12 @@ func _on_Retry_pressed():
 func _on_Next_level_pressed():
 	var next_scene = ""
 	Globals.current_level += 1
+<<<<<<< HEAD
 	print(Globals.current_level)
+=======
+>>>>>>> parent of bf3053b... SAOj
 	if Globals.current_level >= Globals.levels.size():
 		next_scene = "res://scenes/screens/credits.tscn"
 	else:
 		next_scene = Globals.levels[Globals.current_level]
-		print(next_scene)
 	get_tree().change_scene(next_scene)
-
