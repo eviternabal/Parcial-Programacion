@@ -35,7 +35,7 @@ func _on_goal_reached():
 
 func _on_timer_timeout():
 	level_time += 1
-	$UI/Label.set_text("Time: " + str(level_time))
+	$UI/time_text.set_text("Time: " + str(level_time))
 
 func on_pickup_pickuped():
 	collectibles += 1
