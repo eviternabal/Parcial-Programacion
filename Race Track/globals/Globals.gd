@@ -1,9 +1,9 @@
 extends Node
 
 var levels = [
-	"res://scenes/Level 1.tscn",
-	"res://scenes/Level 2.tscn",
-	"res://scenes/Level 3.tscn"
+	"res://scenes/levels/Level 1.tscn",
+	"res://scenes/levels/Level 2.tscn",
+	"res://scenes/levels/Level 3.tscn"
 ]
 
 var level_score = 0
