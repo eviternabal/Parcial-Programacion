@@ -18,7 +18,7 @@ func _ready():
 		pickup.connect ("pickup_pickuped", self, "on_pickup_pickuped")
 
 func _on_goal_reached():
-	score = collectibles*100 - level_time
+	score = collectibles*100 - level_time*50
 	if score > 0:
 		Globals.level_time = level_time
 		if Globals.current_level == 0:
@@ -42,3 +42,4 @@ func _on_timer_timeout():
 
 func on_pickup_pickuped():
 	collectibles += 1
+	$UI/collectibles_text.text = ("Collectibles: " + str(collectibles))
