@@ -1,10 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/seamless.png" type="Texture" id=2]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=4]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
 
 [node name="Level 1" type="Node2D"]
 position = Vector2( 8000.5, -431.773 )
@@ -21,7 +28,6 @@ texture_scale = Vector2( 5, 5 )
 polygon = PoolVector2Array( -121.182, 350.403, -116.142, 476.395, -101.023, 567.109, -85.9043, 672.943, -40.5471, 763.657, -10.3091, 809.014, 35.0481, 884.61, 90.4846, 980.364, 140.881, 1091.24, 206.397, 1202.11, 307.191, 1343.22, 402.945, 1449.05, 569.255, 1605.28, 811.16, 1761.51, 992.588, 1837.11, 1184.1, 1887.51, 1491.52, 1922.78, 1824.14, 1973.18, 2151.72, 1963.1, 2479.29, 1877.43, 2680.88, 1796.79, 2892.55, 1721.2, 3033.66, 1600.24, 3184.85, 1464.17, 3325.96, 1348.26, 3441.87, 1212.19, 5307.1, 2252.04, 3982.23, 1741.94, 3746.84, 1686.92, 3531.41, 1691.14, 3332.07, 1757.62, 3245.68, 1907.03, 3188.53, 2034.02, 3067.89, 2167.36, 2877.4, 2249.91, -232.065, 2174.77, -232.065, -1085.91 )
 
 [node name="car" parent="." instance=ExtResource( 1 )]
-position = Vector2( 9975.02, 4520.51 )
 
 [node name="2da parte medio" type="StaticBody2D" parent="."]
 position = Vector2( 5601.97, 1411.18 )
@@ -57,3 +63,24 @@ polygon = PoolVector2Array( -1890.28, -1524.7, -1251.52, -1262.02, -980.297, -10
 position = Vector2( 17169.8, 2885.34 )
 rotation = -1.34454
 scale = Vector2( 5, 1 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="UI"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -48.0833
+margin_top = -118.0
+margin_right = -48.0833
+custom_fonts/font = SubResource( 1 )
+text = "Time: 0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="level_timer" type="Timer" parent="." groups=[
+"timers",
+]]
+autostart = true
