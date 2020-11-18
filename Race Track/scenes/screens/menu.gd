@@ -9,14 +9,14 @@ var scene_lvl3 = load("res://scenes/levels/Level 3.tscn")
 onready var lvl_1_score = get_node("max score labels/lvl 1")
 onready var lvl_2_score = get_node("max score labels/lvl 2")
 onready var lvl_3_score = get_node("max score labels/lvl 3")
-var level_1_score = Globals.level_1_score
-var level_2_score = Globals.level_2_score
-var level_3_score = Globals.level_3_score
+var level_1_high_score = Globals.level_1_high_score
+var level_2_high_score = Globals.level_2_high_score
+var level_3_high_score = Globals.level_3_high_score
 
 func _ready():
-	lvl_1_score.text = ("Max score: " + level_1_score)
-	lvl_2_score.text = ("Max score: " + level_2_score)
-	lvl_3_score.text = ("Max score: " + level_3_score)
+	lvl_1_score.text = ("Max score: " + str(level_1_high_score))
+	lvl_2_score.text = ("Max score: " + str(level_2_high_score))
+	lvl_3_score.text = ("Max score: " + str(level_3_high_score))
 
 func _on_lvlselector_pressed():
 	get_tree().change_scene_to(scene_lvlselect)

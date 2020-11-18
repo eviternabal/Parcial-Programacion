@@ -8,11 +8,11 @@ var levels = [
 
 var current_level = 0
 
-var level_1_score = 0
+var level_1_high_score = 0
 
-var level_2_score = 0
+var level_2_high_score = 0
 
-var level_3_score = 0
+var level_3_high_score = 0
 
 func _ready():
 	pass 
