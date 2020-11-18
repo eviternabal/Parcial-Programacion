@@ -33,9 +33,12 @@ func _go_to_menu():
 
 func _on_lvl_pressed():
 	if $"lvl 1".pressed:
+		Globals.current_level = 0
 		get_tree().change_scene_to(scene_lvl1)
 	if $"lvl 2".pressed:
+		Globals.current_level = 1
 		get_tree().change_scene_to(scene_lvl2)
 	if $"lvl 3".pressed:
+		Globals.current_level = 2
 		get_tree().change_scene_to(scene_lvl3)
 
