@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/screens/menu.gd" type="Script" id=2]
 [ext_resource path="res://images/Creditos.png" type="Texture" id=3]
 [ext_resource path="res://themes/button.tres" type="Theme" id=4]
 [ext_resource path="res://images/Maurasio_Gaems.png" type="Texture" id=5]
+[ext_resource path="res://music/ievan_polkka.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 72
@@ -38,4 +39,7 @@ __meta__ = {
 position = Vector2( 1582.71, 348.103 )
 scale = Vector2( 0.613873, 0.629587 )
 texture = ExtResource( 5 )
+
+[node name="menu_song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 [connection signal="pressed" from="back" to="." method="_go_to_menu"]

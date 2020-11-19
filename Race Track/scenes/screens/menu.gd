@@ -29,6 +29,7 @@ func _ready():
 		if Globals.SAOj_toggleable == true:
 			$SaojMode.disabled = false
 			$SaojMode.visible = true
+	$menu_song.play()
 
 func _on_SaojMode_toggled(button_pressed): # Activar modo difícil al presionar botón
 	Globals.SAOj_mode = true

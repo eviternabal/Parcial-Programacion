@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/screens/menu.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://images/Mauri_Car_Cover.png" type="Texture" id=3]
 [ext_resource path="res://images/Fondo.jpg" type="Texture" id=4]
 [ext_resource path="res://themes/button.tres" type="Theme" id=5]
+[ext_resource path="res://music/ievan_polkka.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
@@ -81,6 +82,9 @@ text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="menu_song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 [connection signal="pressed" from="lvlselector" to="." method="_on_lvlselector_pressed"]
 [connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

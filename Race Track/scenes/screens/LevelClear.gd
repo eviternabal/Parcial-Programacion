@@ -31,6 +31,7 @@ func _on_Next_level_pressed():
 
 	if Globals.current_level >= Globals.levels.size(): #Si es el último nivel de la lista, lleva al ending
 		next_scene = "res://scenes/screens/game_end.tscn"
+		Globals.SAOj_mode = false
 
 	else: # Ir al nivel siguiente
 		next_scene = Globals.levels[Globals.current_level]
