@@ -36,7 +36,7 @@ func _ready():
 	var total_collectibles = get_tree().get_nodes_in_group("pickups") # Array con todos los collectibles del nivel
 	for collectible in total_collectibles:
 		collectible.connect ("pickup_pickuped", self, "on_pickup_pickuped")
-
+	$level_song.play()
 	$UI/collectibles_text.text = ("Collectibles: " + str(collectibles) + "/" + str(total_collectibles.size())) 
 
 
