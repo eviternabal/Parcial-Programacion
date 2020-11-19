@@ -12,6 +12,7 @@ func _ready():
 	Tiempo.text = ("Tiempo: " + str(Globals.level_time))
 	Puntaje.text = ("Puntaje: " + str(Globals.level_score))
 	Collectibles.text = (str(Globals.last_collectibles))
+	$level_won_sound.play()
 
 
 # Botón para ir al level select

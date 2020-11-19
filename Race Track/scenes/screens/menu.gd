@@ -24,7 +24,7 @@ func _ready():
 		lvl_1_score.text = ("Max score: " + str(level_1_high_score))
 		lvl_2_score.text = ("Max score: " + str(level_2_high_score))
 		lvl_3_score.text = ("Max score: " + str(level_3_high_score))
-
+		
 		# Activar y hacer visible el botón para alternar modo difícil
 		if Globals.SAOj_toggleable == true:
 			$SaojMode.disabled = false
@@ -33,6 +33,7 @@ func _ready():
 func _on_SaojMode_toggled(button_pressed): # Activar modo difícil al presionar botón
 	Globals.SAOj_mode = true
 	$menem.play()
+
 
 
 func _on_lvlselector_pressed(): # Ir al level selector
