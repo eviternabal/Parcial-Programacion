@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
+[ext_resource path="res://sfx/chewing.wav" type="AudioStream" id=1]
 [ext_resource path="res://images/seamless.png" type="Texture" id=2]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=4]
@@ -261,4 +262,7 @@ position = Vector2( 8324.28, 11675.7 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="deathwall"]
 scale = Vector2( 79.9581, 0.957462 )
 shape = SubResource( 3 )
+
+[node name="pickup_pickuped_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
 [connection signal="body_entered" from="deathwall" to="." method="_on_deathwall_body_entered"]

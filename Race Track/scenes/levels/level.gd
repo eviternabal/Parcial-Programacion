@@ -81,6 +81,7 @@ func _on_timer_timeout(): # Un nodo timer envía timeout cada 1 segundo.
 func on_pickup_pickuped():
 	var total_collectibles = get_tree().get_nodes_in_group("pickups") # Array con todos los collectibles del nivel
 	collectibles += 1
+	$pickup_pickuped_sound.play()
 	$UI/collectibles_text.text = ("Collectibles: " + str(collectibles) + "/" + str(total_collectibles.size())) # Lee el tamaño del array para saber cuántos collectibles hay en el nivel
 
 # MUERTE Y RESPAWN #

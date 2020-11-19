@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
+[ext_resource path="res://sfx/chewing.wav" type="AudioStream" id=1]
 [ext_resource path="res://scenes/levels/level.gd" type="Script" id=2]
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=4]
@@ -262,4 +263,7 @@ scale = Vector2( -2.74452, -2.74452 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="deathwall"]
 scale = Vector2( 7.42736, 6.61119 )
 shape = SubResource( 3 )
+
+[node name="pickup_pickuped_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
 [connection signal="body_entered" from="deathwall" to="." method="_on_deathwall_body_entered"]
