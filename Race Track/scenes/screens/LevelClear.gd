@@ -18,6 +18,7 @@ func _ready():
 # Botón para ir al level select
 func _on_lvlselector_pressed(): 
 	get_tree().change_scene_to(scene_lvlselect)
+	Globals.SAOj_mode = false
 
 # Botón de reintentar el nivel
 func _on_Retry_pressed():
