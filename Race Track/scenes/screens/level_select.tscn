@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://fonts/Renogare-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/screens/menu.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://images/lvl1.png" type="Texture" id=5]
 [ext_resource path="res://images/lvl3.png" type="Texture" id=6]
 [ext_resource path="res://images/lvl2.png" type="Texture" id=7]
+[ext_resource path="res://sfx/menem.wav" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -139,6 +140,9 @@ texture = ExtResource( 5 )
 position = Vector2( 1564.67, 506.363 )
 scale = Vector2( 0.65915, 0.65915 )
 texture = ExtResource( 6 )
+
+[node name="menem" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
 [connection signal="pressed" from="lvl 1" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 2" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 3" to="." method="_on_lvl_pressed"]

@@ -32,6 +32,7 @@ func _ready():
 
 func _on_SaojMode_toggled(button_pressed): # Activar modo difícil al presionar botón
 	Globals.SAOj_mode = true
+	$menem.play()
 
 
 func _on_lvlselector_pressed(): # Ir al level selector
