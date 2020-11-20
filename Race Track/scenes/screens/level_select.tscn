@@ -149,10 +149,10 @@ stream = ExtResource( 8 )
 stream = ExtResource( 9 )
 
 [node name="PressR" type="Label" parent="."]
-margin_left = 7.78981
-margin_top = 1006.78
-margin_right = 541.79
-margin_bottom = 1103.78
+margin_left = 735.741
+margin_top = 1018.96
+margin_right = 1269.74
+margin_bottom = 1115.96
 custom_fonts/font = SubResource( 1 )
 text = "Press 'R' to retry while playing"
 align = 1
