@@ -18,3 +18,5 @@ func _get_direction():
 	if Input.is_action_pressed("move_right"):
 		direction +=1
 	return direction
+
+	

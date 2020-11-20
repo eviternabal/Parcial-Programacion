@@ -87,3 +87,12 @@ func on_pickup_pickuped():
 # MUERTE Y RESPAWN #
 func _on_deathwall_body_entered(body): # Recarga la escena al caerse del mapa
 	get_tree().reload_current_scene()
+
+func _input(event):
+	restart()
+	
+func restart():
+	if Input.is_action_pressed("reload_scene"):
+		print("reloaded")
+		get_tree().reload_current_scene()
+

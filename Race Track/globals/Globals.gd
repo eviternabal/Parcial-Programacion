@@ -38,3 +38,5 @@ var last_collectibles = ""
 
 var SAOj_toggleable = false # Si es true permite activar el botón para seleccionar el modo difícil
 var SAOj_mode = false # Activa el modo difícil si es true
+
+
