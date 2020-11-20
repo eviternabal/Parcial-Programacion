@@ -147,6 +147,19 @@ stream = ExtResource( 8 )
 
 [node name="menu_song" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+
+[node name="PressR" type="Label" parent="."]
+margin_left = 7.78981
+margin_top = 1006.78
+margin_right = 541.79
+margin_bottom = 1103.78
+custom_fonts/font = SubResource( 1 )
+text = "Press 'R' to retry while playing"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="lvl 1" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 2" to="." method="_on_lvl_pressed"]
 [connection signal="pressed" from="lvl 3" to="." method="_on_lvl_pressed"]
